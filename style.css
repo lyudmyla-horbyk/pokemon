@@ -1,0 +1,162 @@
+/* general */
+
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Exo 2", sans-serif;
+  padding: 7px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  border: 1px solid black;
+  font-size: 50px;
+  margin-bottom: 15px;
+  padding: 0 5px 0 5px;
+}
+
+/* button */
+
+button {
+  padding: 8px 10px 8px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+/* main */
+
+@media (min-width: 540px) {
+  .pokemons-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .header__title {
+    padding: 8px 80px 8px 80px;
+  }
+}
+@media (min-width: 900px) {
+  .pokemons-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pokemons-list .pokemons-list__load-more-button {
+    grid-column: 1;
+  }
+}
+@media (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns:
+      50%
+      50%;
+  }
+  .pokemons-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pokemons-list .pokemons-list__card-img {
+  width: 100%;
+  display: block;
+}
+.pokemons-list .pokemons-list__card {
+  border: 1px solid black;
+  padding: 10px;
+}
+.pokemons-list .pokemons-list__card-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+.button-container .button-container__type-bulbazavr {
+  background-color: #99ffbb;
+}
+.button-container .button-container__type-bulbazavr:hover {
+  background-color: #00e600;
+  color: white;
+}
+.button-container .button-container__type-charmander {
+  background-color: #ff471a;
+}
+.button-container .button-container__type-charmander:hover {
+  color: white;
+  background-color: #e62e00;
+}
+.button-container .button-container__poison-bulbazavr {
+  background-color: #d9b3ff;
+}
+.button-container .button-container__poison-bulbazavr:hover {
+  color: white;
+  background-color: #b366ff;
+}
+@media (min-width: 400px) {
+  .button-container__type-bulbazavr {
+    padding: 10px 30px 10px 30px;
+  }
+  .button-container__poison-bulbazavr {
+    padding: 10px 30px 10px 30px;
+  }
+}
+.pokemons-list .pokemons-list__load-more-button {
+  background-color: #0099ff;
+  color: white;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.pokemons-list .pokemons-list__load-more-button:hover {
+  background-color: #007acc;
+}
+
+/* sidebar */
+.pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sidebar {
+  border: 1px solid black;
+  padding: 10px;
+}
+.sidebar .sidebar__title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.sidebar .sidebar__table-wrapper {
+  display: flex;
+  justify-content: center;
+}
