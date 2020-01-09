@@ -41,7 +41,8 @@ body {
 
 /* button */
 
-.tag {
+.tag,
+.button {
   padding: 8px 10px 8px 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -53,7 +54,7 @@ body {
 /* main */
 
 @media (min-width: 540px) {
-  .tab-list {
+  .pokemons-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
@@ -63,10 +64,10 @@ body {
   }
 }
 @media (min-width: 900px) {
-  .tab-list {
+  .pokemons-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .tab-list .tab-list__load-more-button {
+  .pokemons-list .pokemons-list__load-more-button {
     grid-column: 1;
   }
 }
@@ -77,47 +78,47 @@ body {
       50%
       50%;
   }
-  .tab-list {
+  .pokemons-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.tab-list .pokemons-card__img {
+.pokemons-list .pokemon-card__img {
   width: 100%;
   display: block;
 }
-.tab-list .pokemons-card {
+.pokemons-list .pokemon-card {
   border: 1px solid black;
   padding: 10px;
 }
-.tab-list .pokemons-card__title {
+.pokemons-list .pokemon-card__title {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.button-container {
+.pokemon-card .pokemon-card__tags {
   display: flex;
   justify-content: space-around;
 }
-.button-container .tag--green {
+.tag.tag--green {
   background-color: #99ffbb;
 }
-.button-container .tag--green:hover {
+.tag.tag--green:hover {
   background-color: #00e600;
   color: white;
 }
-.button-container .tag--red {
+.tag.tag--red {
   background-color: #ff471a;
 }
-.button-container .tag--red:hover {
+.tag.tag--red:hover {
   color: white;
   background-color: #e62e00;
 }
-.button-container .tag--violet {
+.tag.tag--violet {
   background-color: #d9b3ff;
 }
-.button-container .tag--violet:hover {
+.tag.tag--violet:hover {
   color: white;
   background-color: #b366ff;
 }
@@ -129,14 +130,14 @@ body {
     padding: 10px 30px 10px 30px;
   }
 }
-.tab-list .tab-list__load-more-button {
+.pokemons-list .pokemons-list__load-more-button {
   background-color: #0099ff;
   color: white;
   width: 100%;
   margin-top: 15px;
 }
 
-.tab-list .tab-list__load-more-button:hover {
+.pokemons-list .pokemons-list__load-more-button:hover {
   background-color: #007acc;
 }
 
