@@ -148,9 +148,7 @@
   </body>
 </template>
 
-<script></script>
-
-<style scoped lang="css">
+<style lang="css">
 /* general */
 
 header,
