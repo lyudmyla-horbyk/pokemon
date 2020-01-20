@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div>
     <header class="header">
       <h1 class="header__title">Pokedex</h1>
     </header>
@@ -145,7 +145,7 @@
       </div>
     </main>
     <footer class="footer"></footer>
-  </body>
+  </div>
 </template>
 
 <style lang="css">
