@@ -47,7 +47,6 @@
   </div>
 </template>
 <style scoped lang="css">
-/* sidebar */
 .sidebar {
   border: 1px solid black;
   padding: 10px;

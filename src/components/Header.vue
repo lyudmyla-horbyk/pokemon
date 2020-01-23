@@ -4,8 +4,6 @@
   </header>
 </template>
 <style scoped lang="css">
-/* header */
-
 .header {
   display: flex;
   justify-content: center;
